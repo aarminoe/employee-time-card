@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Card } from "@mui/material";
 
 
 function Login() {
@@ -10,7 +11,7 @@ function Login() {
     console.log(pass)
 
     return(
-        <div>
+        <Card>
             <form>
                 <p>user:</p>
                 <input onChange={(e) => setUser(e.target.value)}/>
@@ -18,7 +19,7 @@ function Login() {
                 <input type={"password"} onChange={(e) => setPass(e.target.value)}/>
             </form>
 
-        </div>
+        </Card>
     )
 }
 
