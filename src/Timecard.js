@@ -6,15 +6,8 @@ function Timecard() {
 
     const [location, setLocation] = useState("")
 
-    function testApi() {
-        fetch('https://3pp81dbn46.execute-api.us-east-1.amazonaws.com/dev')
-        .then(res => res.json())
-        .then(data => console.log(data))
-    }
-
     return (
         <div>
-            <button onClick={testApi}>test api</button>
             <Card>
                 <div>
                     <h1>Timecard</h1>
